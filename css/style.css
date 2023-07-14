@@ -82,6 +82,7 @@ button.navbar-toggle {
 
 .btn-theme,.btn-theme:hover,.btn-theme:focus{
 	color: #fff; /*#fff*/
+	background: #fff;
 }
 .btn-theme:hover{
 	background: transparent !important;
@@ -169,8 +170,8 @@ nav.navbar.fixed-to-top{
 	text-transform: uppercase;
 }
 
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
-	color: #ce1e1e;
+.navbar-default .navbar-nav>li>a:hover{
+	color: #ce1e1e;  /*How to make this change after button is clicked?*/
 	cursor: pointer;
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
@@ -180,6 +181,9 @@ nav.navbar.fixed-to-top{
 	outline: 0;
 }
 
+.navbar-default .navbar-nav>li>a:active{
+	color: #fff
+}
 /* brand / logo */
 .navbar-default .navbar-brand{
 	color: #fff;
