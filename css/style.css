@@ -171,7 +171,7 @@ nav.navbar.fixed-to-top{
 }
 
 .navbar-default .navbar-nav>li>a:hover{
-	color: #ce1e1e;  /*How to make this change after button is clicked?*/
+	color: #ce1e1e;
 	cursor: pointer;
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
