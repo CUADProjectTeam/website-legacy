@@ -182,7 +182,7 @@ nav.navbar.fixed-to-top{
 }
 
 .navbar-default .navbar-nav>li>a:active{
-	color: #fff
+	color: #ce1e1e  /*changed from #fff*/
 }
 /* brand / logo */
 .navbar-default .navbar-brand{
@@ -370,15 +370,20 @@ Team
 ================================= */
 .box-team img {
 	margin-bottom: 30px;
+	/*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
+    /*justify-items: center; Centers items horizontally within each cell
+    align-items: center; Centers items vertically within each cell */
 }
 
 .grid-item {
     width: 20%;
     padding: 10px;
-    margin: 10px;
+    margin: 0px;
 	color: black;
 	position: relative;
 	display: inline;
+	/*justify-items: center;
+	justify-content: space-evenly;*/
   }
   /*.Mechanical-Team {
     background:gray;
