@@ -14,7 +14,7 @@
   <style>
     .home-section {
 	width: 100%;
-	padding: 50px 0px 50px 0px !important;
+	padding: 100px 0px 100px 0px !important;
 }
 </style>
 </head>
@@ -233,14 +233,23 @@
       $('.sort button').removeClass('active');
       $(this).addClass('active');
     })
-    function navbar() {
-        if ($(window).scrollTop() > 1) {
-      $('#navigation').addClass('show-nav');
-    } else {
-      $('#navigation').addClass('show-nav');
-    }
-    }
   </script>
+  <script>
+  $(window).load(function() {
+    $('.navbar-default').css('display', 'block');
+    $('.navbar-default').addClass('fixed-to-top');
+  });
+  $(window).scroll(function() {
+    $('.navbar-default').css('display', 'block');
+    $('.navbar-default').addClass('fixed-to-top');
+  });
+
+  //This is more spaghetti than the shit you'll find it italy, but it WORKS. 
+  //FUCK YOU, JS. 
+  //If you know what you're doing feel free to change this, but the NavBar
+  //should ALWAYS be present on the Alumni page. 
+</script>
+  
 
 </body>
 
