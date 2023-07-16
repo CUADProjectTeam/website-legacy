@@ -59,7 +59,7 @@ As for where to insert it:
 
 Obviously, over time that exact position would change, but it should remain
 fairly obvious where to insert new members. It would be at that same location,
-just after the </div> that closes the "team-member" class.
+just after the /div that closes the "team-member" class.
 
 ## Moving Graduates to the Alumni Section
 
@@ -108,7 +108,7 @@ directory, and the title they hold **MUST** be accompanied by the years
 that they filled that role. 
 
 Like with members, these should be inserted at the end of the alumni
-list, just after the </div> that closes the previous alumni's
+list, just after the /div that closes the previous alumni's
 "team-member" class. 
 
 ### CUAD History Lesson
@@ -118,8 +118,7 @@ The section of alumni is missing a lot of people.
 
 A bit of CUAD history here:
 
-Before we became a project team, we were a club known as ARC:
-Aerial Robotics Cornell.
+Before we became a project team, we were a club known as ARC: Aerial Robotics at Cornell.
 Depending on when you read this, this is either a very recent memory or
 new information. In 2020, the club essentially went dormant due to a variety
 of factors, including COVID and a lack of members as many had graduated. 
@@ -181,7 +180,7 @@ Take the following HTML template (same as above), and add their info:
         </div>
 ```
 
-Exactly like above, this should be inserted after a </div> that closes
+Exactly like above, this should be inserted after a /div that closes
 the "team-member" class of a previous entry. 
 
 Do your best to put these in order of graduation year, and if they can then
