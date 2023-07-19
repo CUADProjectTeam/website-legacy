@@ -217,6 +217,25 @@
         }
       }
     });
+
+    $(window).resize(function() {
+      $grid.isotope({
+        layoutMode: getLayout()
+      });
+      $grid.item({
+        width: setWidth()
+      })
+    });
+
+    function getLayout() {
+      if ($(window).width() < 500) {
+        return 'vertical'
+      } else {  //This code doesn't seem to 100% resolve the issue. Circles are still wack...
+        return 'fitRows'
+      }
+    }
+
+    
     $('.filter button').on("click", function () {
       var value = $(this).attr('data-name');
       $grid.isotope({

@@ -92,11 +92,10 @@
           </div>
         </div>
       </div>
-      <div class="row wow fadeInUp">
+      <div class="row wow">
         <div class="col-md-6 about-img">
           <img src="img/about-img.jpg" alt="">
         </div>
-
         <div class="col-md-6 content">
           <p>Founded in 2017, we are a team focused on building both controlled and autonomous drones to compete in
             the International Aerial Robotics Competition. The primary purpose of the IARC is to move the state-of-the-art
@@ -128,7 +127,7 @@
 
       <div class="row">
         <div class="col-sm-12 col-md-offset-1 col-md-6">
-          <div class="wow bounceInLeft">
+          <div class="wow">
             <h4>Mission 9</h4>
             <p> The current Mission 9 challenges teams to demonstrate new behaviors that have never before been attempted in any of the past IARC missions. Teams must create drones which can navigate fully autonomously, identify a target on a moving platform, manipulate objects mid flight, read text in russian, and speed through a 4 mile distance all in 9 minutes. Check out the video on the right for real life demonstration from the past 2017 competition.</p>
             <p> For more information, check out their website: http://www.aerialroboticscompetition.org/
@@ -136,7 +135,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-5">
-          <div class="screenshot wow bounceInRight">
+          <div class="screenshot wow">
             <div class="embed-responsive embed-responsive-16by9">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/JknrXs-s7y8?start=210" frameborder="0" allow="autoplay; encrypted-media"
                 allowfullscreen></iframe>
@@ -167,7 +166,7 @@
               <div class="item active">
                 <div class="row">
                   <div class="col-sm-12 col-md-offset-1 col-md-6">
-                    <div class="wow bounceInLeft">
+                    <div class="wow">
                       <h4>Mechanical Team</h4>
                       <p>The mechanical team is responsible for the overall physical of the drone. This includes designing and
                         building the frame and aerodynamics of the drone. They also work closely together with the electrical
@@ -176,7 +175,7 @@
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-5">
-                    <div class="screenshot wow bounceInRight">
+                    <div class="screenshot wow">
                       <img src="img/screenshots/1.png" class="img-responsive" alt="" />
                     </div>
                   </div>
@@ -185,7 +184,7 @@
               <div class="item">
                 <div class="row">
                   <div class="col-sm-12 col-md-offset-1 col-md-6">
-                    <div class="wow bounceInLeft">
+                    <div class="wow">
                       <h4>Electrical Team</h4>
                       <p>The electrical team is in charge of anything that requires any electronics or low level coding. 
                         They deal with power distribution, serial communication, sensors, wiring soldering, computer architecture and radio signals.
@@ -193,7 +192,7 @@
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-5">
-                    <div class="screenshot wow bounceInRight">
+                    <div class="screenshot wow">
                       <img src="img/screenshots/e.jpg" class="img-responsive" alt="" />
                     </div>
                   </div>
@@ -202,7 +201,7 @@
              <div class="item">
                 <div class="row">
                   <div class="col-sm-12 col-md-offset-1 col-md-6">
-                    <div class="wow bounceInLeft">
+                    <div class="wow">
                       <h4>Computer Science Team</h4>
                       <p>The computer science subteam makes the brains of the drone. They construct and implement the algorithms for object avoidance, 
                         path planning, communications, mission protocols and give the drone the awareness it needs to take on the challenges.
@@ -210,7 +209,7 @@
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-5">
-                    <div class="screenshot wow bounceInRight">
+                    <div class="screenshot wow">
                       <img src="img/screenshots/ARCcsphoto.png" class="img-responsive" alt="" />
                     </div>
                   </div>
@@ -219,7 +218,7 @@
               <div class="item">
                 <div class="row">
                   <div class="col-sm-12 col-md-offset-1 col-md-6">
-                    <div class="wow bounceInLeft">
+                    <div class="wow">
                       <h4>Business Team</h4>
                       <p>The business team is in charge of any business development, marketing, or outreach for the team. The
                         team is also responsible for all the finances, website development, video editing, and potential
@@ -228,7 +227,7 @@
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-5">
-                    <div class="screenshot wow bounceInRight">
+                    <div class="screenshot">
                       <img src="img/screenshots/4.jpg" class="img-responsive" alt="" />
                     </div>
                   </div>
@@ -421,6 +420,8 @@
     <i class="fa fa-chevron-up"></i>
   </a>
 
+  <!--style-->
+
   <!-- js -->
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -442,13 +443,40 @@
   <script>
     var $grid = $('.grid').isotope({
       itemSelector: '.grid-item',
-      layoutMode: 'fitRows',
+      layoutMode: getLayout(),
       getSortData: {
         name: function (element) {
           return $(element).text();
         }
       }
     });
+
+
+    $(window).resize(function() {
+      $grid.isotope({
+        layoutMode: getLayout()
+      });
+      $grid.item({
+        width: setWidth()
+      })
+    });
+
+    function getLayout() {
+      if ($(window).width() < 500) {
+        return 'vertical'
+      } else {  //This code doesn't seem to 100% resolve the issue. Circles are still wack...
+        return 'fitRows'
+      }
+    }
+
+    function setWidth() {
+      if ($(window).width() < 500) {
+        return '100%'
+      } else {  
+        return '20%'
+      }
+    }
+
     $('.filter button').on("click", function () {
       var value = $(this).attr('data-name');
       $grid.isotope({
@@ -457,6 +485,7 @@
       $('.filter button').removeClass('active');
       $(this).addClass('active');
     })
+    
     $('.sort button').on("click", function () {
       var value = $(this).attr('data-name');
       $grid.isotope({

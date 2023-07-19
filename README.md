@@ -247,24 +247,47 @@ I don't know the first thing about front-end development, so if you
 do feel free to add to this list how you see fit. However, from the things
 I can discern/the work I've done so far, the following needs to be finished:
 
-- [ ] Get NavBar working on Alumni Page
+- [x] Get NavBar working on Alumni Page (Current fix is spaghetti.)
+- [x] Cut down on animations - it looks fucking stupid
 - [ ] Address why you need to open a new tab to access alumni page
 (This might be a local issue??)
 - [ ] Fix mobile site 
 - [ ] Removing Caurosel for Team Introductions (it looks like horseshit)
-- [ ] Improving performance - This can likely be accomplished by cutting down
-on the amount of animations. 
 - [ ] Updating js files (bootstrap 3 LMAO) 
 This should only be done if you really know what you're doing. If you're like
 me, this can go unaddressed for the time being. 
 - [ ] Moving this to its own domain (CUAD.org ????)
+- [ ] Rework Member/Alumni page. Make it a JSON and parse it through. 
 
 Of course, make sure to check in with your lead to see if anything else needs
 to be accomplished with the website. 
 
+## Potential Reset/Redo of Website 
+
+Upon some discussion with the CS Team, it has come to my attention that this
+website is just... bad. It has way too much JS, way too many animations,
+and just straight up bad code for what should really only be a two-page
+website. When you, the current webmaster, are brought in, this will likely be
+a focal point of discussion. If we are confident in your ability we might
+just give you the go ahead and nuke this entire website to start fresh. 
+All of this would be replaced. 
+
+If this option is chosen, it's important to know that the main features of this
+website must remain the same. While I hope the presentation is changed, the 
+bulk of the _information_ should remiain the same:
+
+- Who we are
+- What we do
+- Subteam info
+- Members and Alumni, with redirects to LinkedIn so people can get a sense of 
+what our members do currently/post-grad. 
+
+As stated earlier, this decision would be made only after much deliberation
+and discussion. Should it come to pass, we believe in you, young grasshopper.
+
 ### Acknowledgements
 
-I'd like to give a special thank you to the 2021-2022 lead staff for inspiring
+I'd like to give a special thank you to the 2021-2023 lead staff for inspiring
 my deep passion for Aerial Robotics, for always being so warm and
 welcoming, and for providing some unforgettable nights in the form 
 of team socials. 
@@ -280,6 +303,8 @@ all of your efforts and hard work.
 ### Author
 
 This readme was written by Santiago Blaumann. 
+
+Last modified 7/19/23 by Santiago Blaumann
 
 
 
