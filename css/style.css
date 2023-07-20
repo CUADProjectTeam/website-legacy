@@ -190,9 +190,8 @@ nav.navbar.fixed-to-top{
 	/*text-transform: uppercase;*/
 	font-weight: 700;
 	font-size: 2em;
-
-
 }
+
 
 /* ================================
 Home sections
@@ -286,7 +285,7 @@ Intro
   top: 0;
   left: 0;
   right: 0;
-	z-index:999;
+  z-index:999;
 }
 
 .intro-text h1 {
