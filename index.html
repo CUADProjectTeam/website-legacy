@@ -54,9 +54,11 @@
           <li>
             <a href="#recruitment">Recruitment</a>
           </li>
+          <!--
           <li>
             <a href="alumni.html" target="_self">Alumni</a>
           </li>
+        -->
         </ul>
       </div>
     </div>
@@ -255,6 +257,7 @@
   came about largely because it was too much text for longer names, and would
   place the members name weirdly high in the bubble. This is a hotfix and should
   be fixed later. Low priority. -->
+  <!--
   <section id="members" class="home-section bg-gray">
     <div class="container">
       <div class="filter">
@@ -311,7 +314,7 @@
             </div>
           </div>
         </a>
-        <!--Additional members would go here. -->
+        Additional members would go here. 
         <a href="https://www.linkedin.com/in/newt-powers-477b15183">
         <div class="team-member">
           <div class="grid-item Electrical-Team">
@@ -326,11 +329,25 @@
           </div>
         </div>
         </a>
-        <!--Insert new members here-->
-        <!--Waiting on members to submit their photos...-->
+        <a href="https://www.linkedin.com/in/italivi-diaz-a7243a237/">
+          <div class="team-member">
+            <div class="grid-item Mechanical-Team">
+              <div class="box-team">
+                <img src="Member-Profile-Pictures/Current/Italivi_Diaz_2025.jpg" alt="" class="img-circle img-responsive" />
+                <div class="text-pos">
+                  <div class="name">Italivi Diaz</div>
+                  <div class="major">Mechanical Engineering</div>
+                  <div class="year">2025</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </a>
+        Insert new members here
+        Waiting on members to submit their photos...
       </div>
   </section>
-
+-->
   <!-- Recruitment -->
   <section id="recruitment" class="home-section parallax bg-white" data-stellar-background-ratio="0.5">
     <div class="container">
@@ -352,7 +369,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <div class="contact-widget wow bounceInLeft">
+          <div class="contact-widget wow">
             <i class="fa fa-map-marker fa-4x"></i>
             <h5>Main Office</h5>
             <p>
@@ -362,7 +379,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="contact-widget wow bounceInUp">
+          <div class="contact-widget wow">
             <i class="fa fa-phone fa-4x"></i>
             <h5>Call</h5>
             <p>
@@ -371,7 +388,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="contact-widget wow bounceInRight">
+          <div class="contact-widget wow">
             <i class="fa fa-envelope fa-4x"></i>
             <h5>Email us</h5>
             <p>
@@ -444,6 +461,9 @@
     var $grid = $('.grid').isotope({
       itemSelector: '.grid-item',
       layoutMode: getLayout(),
+      masonry: {
+        width: setWidth()
+      },
       getSortData: {
         name: function (element) {
           return $(element).text();
@@ -451,14 +471,10 @@
       }
     });
 
-
     $(window).resize(function() {
       $grid.isotope({
-        layoutMode: getLayout()
+        layoutMode: getLayout(),
       });
-      $grid.item({
-        width: setWidth()
-      })
     });
 
     function getLayout() {
