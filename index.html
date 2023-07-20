@@ -48,12 +48,19 @@
           <li>
             <a href="#subteams">Teams</a>
           </li>
+          <!--
           <li>
             <a href="#members">Members</a>
           </li>
+        -->
           <li>
             <a href="#recruitment">Recruitment</a>
           </li>
+          <!--
+          <li>
+            <a href="alumni.html" target="_self">Alumni</a>
+          </li>
+        -->
         </ul>
       </div>
     </div>
@@ -89,11 +96,10 @@
           </div>
         </div>
       </div>
-      <div class="row wow fadeInUp">
+      <div class="row wow">
         <div class="col-md-6 about-img">
           <img src="img/about-img.jpg" alt="">
         </div>
-
         <div class="col-md-6 content">
           <p>Founded in 2017, we are a team focused on building both controlled and autonomous drones to compete in
             the International Aerial Robotics Competition. The primary purpose of the IARC is to move the state-of-the-art
@@ -125,7 +131,7 @@
 
       <div class="row">
         <div class="col-sm-12 col-md-offset-1 col-md-6">
-          <div class="wow bounceInLeft">
+          <div class="wow">
             <h4>Mission 9</h4>
             <p> The current Mission 9 challenges teams to demonstrate new behaviors that have never before been attempted in any of the past IARC missions. Teams must create drones which can navigate fully autonomously, identify a target on a moving platform, manipulate objects mid flight, read text in russian, and speed through a 4 mile distance all in 9 minutes. Check out the video on the right for real life demonstration from the past 2017 competition.</p>
             <p> For more information, check out their website: http://www.aerialroboticscompetition.org/
@@ -133,7 +139,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-5">
-          <div class="screenshot wow bounceInRight">
+          <div class="screenshot wow">
             <div class="embed-responsive embed-responsive-16by9">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/JknrXs-s7y8?start=210" frameborder="0" allow="autoplay; encrypted-media"
                 allowfullscreen></iframe>
@@ -164,7 +170,7 @@
               <div class="item active">
                 <div class="row">
                   <div class="col-sm-12 col-md-offset-1 col-md-6">
-                    <div class="wow bounceInLeft">
+                    <div class="wow">
                       <h4>Mechanical Team</h4>
                       <p>The mechanical team is responsible for the overall physical of the drone. This includes designing and
                         building the frame and aerodynamics of the drone. They also work closely together with the electrical
@@ -173,7 +179,7 @@
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-5">
-                    <div class="screenshot wow bounceInRight">
+                    <div class="screenshot wow">
                       <img src="img/screenshots/1.png" class="img-responsive" alt="" />
                     </div>
                   </div>
@@ -182,7 +188,7 @@
               <div class="item">
                 <div class="row">
                   <div class="col-sm-12 col-md-offset-1 col-md-6">
-                    <div class="wow bounceInLeft">
+                    <div class="wow">
                       <h4>Electrical Team</h4>
                       <p>The electrical team is in charge of anything that requires any electronics or low level coding. 
                         They deal with power distribution, serial communication, sensors, wiring soldering, computer architecture and radio signals.
@@ -190,7 +196,7 @@
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-5">
-                    <div class="screenshot wow bounceInRight">
+                    <div class="screenshot wow">
                       <img src="img/screenshots/e.jpg" class="img-responsive" alt="" />
                     </div>
                   </div>
@@ -199,7 +205,7 @@
              <div class="item">
                 <div class="row">
                   <div class="col-sm-12 col-md-offset-1 col-md-6">
-                    <div class="wow bounceInLeft">
+                    <div class="wow">
                       <h4>Computer Science Team</h4>
                       <p>The computer science subteam makes the brains of the drone. They construct and implement the algorithms for object avoidance, 
                         path planning, communications, mission protocols and give the drone the awareness it needs to take on the challenges.
@@ -207,7 +213,7 @@
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-5">
-                    <div class="screenshot wow bounceInRight">
+                    <div class="screenshot wow">
                       <img src="img/screenshots/ARCcsphoto.png" class="img-responsive" alt="" />
                     </div>
                   </div>
@@ -216,7 +222,7 @@
               <div class="item">
                 <div class="row">
                   <div class="col-sm-12 col-md-offset-1 col-md-6">
-                    <div class="wow bounceInLeft">
+                    <div class="wow">
                       <h4>Business Team</h4>
                       <p>The business team is in charge of any business development, marketing, or outreach for the team. The
                         team is also responsible for all the finances, website development, video editing, and potential
@@ -225,7 +231,7 @@
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-5">
-                    <div class="screenshot wow bounceInRight">
+                    <div class="screenshot">
                       <img src="img/screenshots/4.jpg" class="img-responsive" alt="" />
                     </div>
                   </div>
@@ -249,6 +255,11 @@
 
 
   <!-- Team Members-->
+  <!-- Changing "Electrical and Computer Engineering" to "ECE" is a change that
+  came about largely because it was too much text for longer names, and would
+  place the members name weirdly high in the bubble. This is a hotfix and should
+  be fixed later. Low priority. -->
+  <!--
   <section id="members" class="home-section bg-gray">
     <div class="container">
       <div class="filter">
@@ -256,134 +267,99 @@
         <button data-name='*' class="btn bg-gray">All</button>
         <button data-name=".Mechanical-Team" class="btn bg-gray">Mechanical Team</button>
         <button data-name=".Electrical-Team" class="btn bg-gray">Electrical Team</button>
-        <button data-name=".Business-Team" class="btn bg-gray">Computer Science Team</button>
+        <button data-name=".Business-Team" class="btn bg-gray">Business Team</button>
+        <button data-name=".CS-Team" class="btn bg-gray">Computer Science Team</button>
       </div>
       <div class="grid">
-        <div class="team-member">
-          <div class="grid-item Electrical-Team">
-            <div class="box-team wow bounceInUp">
-              <img src="Member-Profile-Pictures/Nicholas_George_2023.jpg" alt="" class="img-circle img-responsive" />
-              <div class="text-pos">
-                <div class="name">Nicholas George</div>
-                <div class="major">Electrical and Computer Engineering</div>
-                <div class="year">2023</div>
-
-              </div>
-            </div>
-            <h5>President</h5>
-          </div>
-        </div>
-        <div class="team-member">
-          <div class="grid-item Mechanical-Team">
-            <div class="box-team wow bounceInUp">
-              <img src="Member-Profile-Pictures/Cole_Dawson_2023.jpg" alt="" class="img-circle img-responsive" />
-              <div class="text-pos">
-                <div class="name">Cole Dawson</div>
-                <div class="major">Mechanical Engineering</div>
-                <div class="year">2023</div>
-              </div>
-            </div>
-           <h5>Vice President</h5>
-          </div>
-        </div>
-        <div class="team-member">
-          <div class="grid-item Electrical-Team">
-            <div class="box-team wow bounceInUp">
-              <img src="Member-Profile-Pictures/Juliet_DeNapoli_2023.jpg" alt="" class="img-circle img-responsive" />
-              <div class="text-pos">
-                <div class="name">Juliet DeNapoli</div>
-                <div class="major">Electrical and Computer Engineering</div>
-                <div class="year">2023</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="team-member">
-          <div class="grid-item Business-Team">
-            <div class="box-team wow bounceInUp">
-              <img src="Member-Profile-Pictures/Diego_Fernadez_2024.jpg" alt="" class="img-circle img-responsive" />
-              <div class="text-pos">
-                <div class="name">Diego Fernandez</div>
-                <div class="major">Computer Science</div>
-                <div class="year">2024</div>
-              </div>
-            </div>
-           <h5>CS Subteam Co-Lead</h5>
-          </div>
-        </div>
-        <div class="team-member">
-          <div class="grid-item Business-Team">
-            <div class="box-team wow bounceInUp">
-              <img src="Member-Profile-Pictures/Dina_Brustein_2024.jpg" alt="" class="img-circle img-responsive" />
-              <div class="text-pos">
-                <div class="name">Dina Brustein</div>
-                <div class="major">Computer Science</div>
-                <div class="year">2024</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="team-member">
-          <div class="grid-item Business-Team">
-            <div class="box-team wow bounceInUp">
-              <img src="Member-Profile-Pictures/Eric_Zhang_2023.jpg" alt="" class="img-circle img-responsive" />
-              <div class="text-pos">
-                <div class="name">Eric Zhang</div>
-                <div class="major">Computer Science</div>
-                <div class="year">2023</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="team-member">
-          <div class="grid-item Business-Team">
-            <div class="box-team wow bounceInUp">
-              <img src="Member-Profile-Pictures/James_Goodling_2022.jpg" alt="" class="img-circle img-responsive" />
-              <div class="text-pos">
-                <div class="name">James Goodling</div>
-                <div class="major">Computer Science</div>
-                <div class="year">2022</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="team-member">
-          <div class="grid-item Business-Team">
-            <div class="box-team wow bounceInUp">
-              <img src="Member-Profile-Pictures/Mavis_Lee_2023.jpg" alt="" class="img-circle img-responsive" />
-              <div class="text-pos">
-                <div class="name">Mavis Lee</div>
-                <div class="major">Computer Science</div>
-                <div class="year">2023</div>
-              </div>
-            </div>
-           <h5>CS Subteam Co-Lead</h5>
-          </div>
-        </div>
-        <div class="team-member">
-          <div class="grid-item Electrical-Team">
-            <div class="box-team wow bounceInUp">
-                <img src="Member-Profile-Pictures/Omar_Elhosseni_2023.jpg" alt="" style="width: 18em" class="img-circle img-responsive" />
+        <a href="https://www.linkedin.com/in/santiago-blaumann">
+          <div class="team-member">
+            <div class="grid-item Mechanical-Team">
+              <div class="box-team">
+                <img src="Member-Profile-Pictures/Current/Santiago_Blaumann_2025.jpg" alt="" class="img-circle img-responsive" />
                 <div class="text-pos">
-                <div class="name">Omar Elhosseni</div>
-                <div class="major">Electrical and Computer Engineering</div>
-                <div class="year">2023</div>
+                  <div class="name">Santiago Blaumann</div>
+                  <div class="major">Computer Science/Physics</div>
+                  <div class="year">2025</div>
+                </div>
+              </div>
+              <h5>President</h5>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/aditya-kakade-a04247190">
+          <div class="team-member">
+            <div class="grid-item CS-Team">
+              <div class="box-team">
+                <img src="Member-Profile-Pictures/Current/Aditya_Kakade_2025.jpeg" alt="" class="img-circle img-responsive" />
+                <div class="text-pos">
+                  <div class="name">Aditya Kakade</div>
+                  <div class="major">Computer Science</div>
+                  <div class="year">2025</div>
+                </div>
+              </div>
+              <h5>CS Subteam Co-Lead</h5>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/jtklenke"> 
+          <div class="team-member">
+            <div class="grid-item CS-Team">
+              <div class="box-team">
+                <img src="Member-Profile-Pictures/Current/JT_Klenke_2026.jpg" alt="" class="img-circle img-responsive" />
+                <div class="text-pos">
+                  <div class="name">JT Klenke</div>
+                  <div class="major">Computer Science</div>
+                  <div class="year">2026</div>
+                </div>
+              </div>
+              <h5>CS Subteam Co-Lead</h5>
+            </div>
+          </div>
+        </a>
+        Additional members would go here. 
+        <a href="https://www.linkedin.com/in/newt-powers-477b15183">
+        <div class="team-member">
+          <div class="grid-item Electrical-Team">
+            <div class="box-team">
+              <img src="Member-Profile-Pictures/Current/Newt_Powers_2025.png" alt="" class="img-circle img-responsive" />
+              <div class="text-pos">
+                <div class="name">Newt Powers</div>
+                <div class="major">ECE</div>
+                <div class="year">2025</div>
               </div>
             </div>
           </div>
         </div>
+        </a>
+        <a href="https://www.linkedin.com/in/italivi-diaz-a7243a237/">
+          <div class="team-member">
+            <div class="grid-item Mechanical-Team">
+              <div class="box-team">
+                <img src="Member-Profile-Pictures/Current/Italivi_Diaz_2025.jpg" alt="" class="img-circle img-responsive" />
+                <div class="text-pos">
+                  <div class="name">Italivi Diaz</div>
+                  <div class="major">Mechanical Engineering</div>
+                  <div class="year">2025</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </a>
+        Insert new members here
+        Waiting on members to submit their photos...
       </div>
   </section>
-
+-->
   <!-- Recruitment -->
   <section id="recruitment" class="home-section parallax bg-white" data-stellar-background-ratio="0.5">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="color-dark">
-            <h2 class="wow bounceInDown" data-wow-delay="0.5s">RECRUITMENT</h2>
-            <p class="lead wow bounceInUp" data-wow-delay="1s"> With our recent transition to a project team, recruitment will follow the project team recruitment timeline. </p>
-            <p class="lead wow bounceInUp" data-wow-delay="1s"> Questions? Email us at cornellaerialrobotics@gmail.com.</p>
+            <h2>RECRUITMENT</h2>
+            <p class="lead">With our recent transition to a project team, recruitment will follow the project team recruitment timeline. </p>
+            <p class="lead"> Questions? Email us at cornellaerialrobotics@gmail.com.</p>
+            <a class="lead" href="https://www.engineering.cornell.edu/cornell-engineering-student-project-teams-join-a-team">Project Team Recruitment Page</a>
           </div>
         </div>
       </div>
@@ -395,32 +371,30 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <div class="contact-widget wow bounceInLeft">
+          <div class="contact-widget wow">
             <i class="fa fa-map-marker fa-4x"></i>
             <h5>Main Office</h5>
             <p>
-              1 Musk Lane,
-              <br />Mars
+              117 Statler Dr
+              <br />Ithaca, New York 14853, US 
             </p>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="contact-widget wow bounceInUp">
+          <div class="contact-widget wow">
             <i class="fa fa-phone fa-4x"></i>
             <h5>Call</h5>
             <p>
-             +1 340-626-7923
-
+             +1 732-310-5152
             </p>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="contact-widget wow bounceInRight">
+          <div class="contact-widget wow">
             <i class="fa fa-envelope fa-4x"></i>
             <h5>Email us</h5>
             <p>
               cornellaerialrobotics@gmail.com
-              
             </p>
           </div>
         </div>
@@ -438,7 +412,7 @@
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/cornell-aerial-robotics">
+              <a href="https://www.linkedin.com/company/cu-auto-drone">
                 <span class="fa-stack fa-2x">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -465,6 +439,8 @@
     <i class="fa fa-chevron-up"></i>
   </a>
 
+  <!--style-->
+
   <!-- js -->
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -486,13 +462,39 @@
   <script>
     var $grid = $('.grid').isotope({
       itemSelector: '.grid-item',
-      layoutMode: 'fitRows',
+      layoutMode: getLayout(),
+      masonry: {
+        width: setWidth()
+      },
       getSortData: {
         name: function (element) {
           return $(element).text();
         }
       }
     });
+
+    $(window).resize(function() {
+      $grid.isotope({
+        layoutMode: getLayout(),
+      });
+    });
+
+    function getLayout() {
+      if ($(window).width() < 500) {
+        return 'vertical'
+      } else {  //This code doesn't seem to 100% resolve the issue. Circles are still wack...
+        return 'fitRows'
+      }
+    }
+
+    function setWidth() {
+      if ($(window).width() < 500) {
+        return '100%'
+      } else {  
+        return '20%'
+      }
+    }
+
     $('.filter button').on("click", function () {
       var value = $(this).attr('data-name');
       $grid.isotope({
@@ -501,6 +503,7 @@
       $('.filter button').removeClass('active');
       $(this).addClass('active');
     })
+    
     $('.sort button').on("click", function () {
       var value = $(this).attr('data-name');
       $grid.isotope({

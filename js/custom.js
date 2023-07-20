@@ -127,7 +127,7 @@
 
     var browserWidth = $(window).width();
 
-    if (browserWidth > 560) {
+    if (browserWidth < 560) {
 
       $(window).scroll(function() {
         navbar();
@@ -142,7 +142,7 @@
 
     var browserWidth = $(window).width();
 
-    if (browserWidth > 560) {
+    if (browserWidth < 560) {
 
       $(window).scroll(function() {
         navbar();
